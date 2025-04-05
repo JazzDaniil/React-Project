@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Goldman", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+    background: #ffffff;
+    color: #000000;
+}
+
+body {
+    background: #0038A5;
+    color: #ffffff;
+}
+
+footer {
+    background: #D52B1F;
+    color: #ffffff;
+}
+
+.wrapper{
+    width: 1280px;
+    margin: 50px auto;
+}
+
+header .logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+header ul.nav{
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li{
+    display: inline;
+    margin-left: 25px;
+    cursor:pointer;
+    transition: opacity 500ms;
+}
+
+header ul.nav li:hover{
+    opacity: 0.5;
+}
+
+header .waltuh {
+   margin: 50px 0; 
+   background: url('./img/mike.jpg') no-repeat;
+   width: 100%;
+   height: 500px;
+   background-size:cover;
+   background-position: center center;
+   position: relative;
+}
+
+header .waltuh:after {
+    content: 'Волтер, домой >:(';
+    color: #ffffff;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 200px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header .waltuh::before {
+    content: 'Густаво не будет с тобой больше работать';
+    color: #ffffff;
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 10;
+}
+
+footer {
+    text-align: center;
+    margin: 20px;
+}
